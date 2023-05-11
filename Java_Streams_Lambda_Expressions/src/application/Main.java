@@ -27,7 +27,7 @@ public class Main {
 		Customer andrea = new Customer(123456, "Andrea", 2);
 		Customer mario = new Customer(234566, "Mario", 8);
 		Customer giuseppe = new Customer(123324, "Giuseppe", 2);
-		Customer riccardo = new Customer(134555, "Riccardo", 6);
+		Customer riccardo = new Customer(134555, "Riccardo", 2);
 		
 		customers.add(giuseppe);
 		customers.add(mario);
@@ -76,9 +76,9 @@ public class Main {
 		
 		LocalDate today = LocalDate.now();
 		LocalDate delivery = today.plusDays(3);
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate date1 = LocalDate.parse("02/02/2021", formatter);
-		LocalDate date2 = LocalDate.parse("11/03/2021", formatter);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+		LocalDate date1 = LocalDate.parse("2021/02/02", formatter);
+		LocalDate date2 = LocalDate.parse("2021/03/02", formatter);
 		
 		Order order1 = new Order(12345, "Disponibile", today, delivery, products2, mario);
 		Order order2 = new Order(12345, "Disponibile", today, delivery, products3, andrea);
