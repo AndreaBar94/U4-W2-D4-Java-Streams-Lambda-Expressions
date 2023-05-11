@@ -25,8 +25,8 @@ public class Product {
 		return price;
 	}
 	
-	public double setPrice(Double price) {
-		return price;
+	public double setPrice(Double newPrice) {
+		return this.price = newPrice;
 		
 	}
 	public String getCategory() {

@@ -85,12 +85,14 @@ public class Main {
 		Order order3 = new Order(12345, "Disponibile", date1, delivery, products4, riccardo);
 		Order order4 = new Order(12345, "Disponibile", today, delivery, products5, andrea);
 		Order order5 = new Order(12345, "Disponibile", date2, delivery, products6, andrea);
+		Order order6 = new Order(12345, "Disponibile", date2, delivery, products6, giuseppe);
 		
 		orders.add(order1);
 		orders.add(order2);
 		orders.add(order3);
 		orders.add(order4);
 		orders.add(order5);
+		orders.add(order6);
 		
 //		LIBRI SOTTO I 100 EURO
 		List<String> booksOverHundred = products.stream().filter(n -> n.getCategory().equals("Books")).filter(n -> n.getPrice() > 100).map(Product::getName).toList();
@@ -116,7 +118,8 @@ public class Main {
 			    	return product.getProdInfo();
 			    })
 			    .toList();
-			//logger.info("Gli ordini che contengono prodotti 'Boys' sono: " + boysOrderDiscount10);
+		
+			logger.info("Gli ordini che contengono prodotti 'Boys' sono: " + boysOrderDiscount10);
 		
 		
 		
