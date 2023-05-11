@@ -38,8 +38,8 @@ public class Main {
 		
 		List <Product> products = new ArrayList<>();
 		
-		Product product1 = new Product(22222, "Motorcycle", "Vehicle", 10500);
-		Product product2 = new Product(12345, "Car", "Vehicle", 15500);
+		Product product1 = new Product(22222, "Motorcycle", "Vehicle", 10500.00);
+		Product product2 = new Product(12345, "Car", "Vehicle", 15500.00);
 		Product product3 = new Product(54321, "1984", "Books", 100.50);
 		Product product4 = new Product(21342, "La Commedia", "Books", 15);
 		Product product5 = new Product(43214, "Decameron", "Books", 17.90);
@@ -69,9 +69,11 @@ public class Main {
 		List <Product> products4 = new ArrayList<>();
 		products4.add(product7);
 		List <Product> products5 = new ArrayList<>();
-		products2.add(product8);
+		products5.add(product8);
 		List <Product> products6 = new ArrayList<>();
-		products3.add(product9);
+		products6.add(product9);
+		List <Product> products7 = new ArrayList<>();
+		products7.add(product1);
 		
 		
 		LocalDate today = LocalDate.now();
@@ -84,7 +86,7 @@ public class Main {
 		Order order2 = new Order(12345, "Disponibile", today, delivery, products3, andrea);
 		Order order3 = new Order(12345, "Disponibile", date1, delivery, products4, riccardo);
 		Order order4 = new Order(12345, "Disponibile", today, delivery, products5, andrea);
-		Order order5 = new Order(12345, "Disponibile", date2, delivery, products2, andrea);
+		Order order5 = new Order(12345, "Disponibile", date2, delivery, products7, andrea);
 		Order order6 = new Order(12345, "Disponibile", date2, delivery, products6, giuseppe);
 		
 		orders.add(order1);
