@@ -96,7 +96,7 @@ public class Main {
 		
 //		LIBRI SOTTO I 100 EURO
 		List<String> booksOverHundred = products.stream().filter(n -> n.getCategory().equals("Books")).filter(n -> n.getPrice() > 100).map(Product::getName).toList();
-		//logger.info("I libri che costano più di 100 euro sono: " + booksOverHundred);
+		logger.info("I libri che costano più di 100 euro sono: " + booksOverHundred);
 		
 		
 		
